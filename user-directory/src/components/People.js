@@ -10,7 +10,7 @@ import * as moment from 'moment'
         <tbody>
         {props.results.map((item, index) => {
           return (<tr key={index}>
-          <td><img src={item.picture.large}/></td>
+          <td><img src={item.picture.thumbnail} alt="person-pic"/></td>
           <td>{item.name.first} {item.name.last}</td>
           <td>{item.cell}</td>
           <td>{item.email}</td>
@@ -19,7 +19,7 @@ import * as moment from 'moment'
         })}
         </tbody>
         </table>
-        {[1,2,3,4]}
+       
         </div>
       );
     }

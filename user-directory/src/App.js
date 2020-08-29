@@ -41,6 +41,7 @@ import * as moment from 'moment'
     }
     return (
       <div className="App">
+      <label htmlFor="search">Search by Name:</label>
       <input onKeyUp = {this.search}/>
       <People results = {results}/>
       </div>
